@@ -358,8 +358,8 @@
                 <form class="footer__email" action="email">
                     <label for="mail"></label>
                     <input class="mail" type="email" name="mail" id="mail" placeholder="E-mail">
-                    <button type="button" class="footer__button">Підписатися
-                        <svg  width="24px" height="24px">
+                    <button type="submit" class="footer__button">Підписатися
+                        <svg width="24px" height="24px">
                             <use href="./img/icons/symbol-defs-email.svg#icon-icon-send-1"></use>
                         </svg>
                     </button>
@@ -375,8 +375,38 @@
                 <svg width="18px" height="18px">
                     <use href="./img/icons/modal-close.svg#icon-Vector"></use>
                 </svg>
-
             </button>
+            <p>Залиште свої дані, ми вам передзвонимо</p>
+            <form class="form">
+                <p class="form__field">
+                    <label for="name">І'мя</label>
+                    <input type="text" name="name" id="name">
+                </p>
+
+                <p class="form__field">
+                    <label for="tel">телефон</label>
+                    <input type="tel" name="tel" id="tel">
+                </p>
+
+                <p class="form__field">
+                    <label for="mail">Пошта</label>
+                    <input type="email" name="mail" id="mail">
+                </p>
+
+                <p class="form__field">
+                    <label for="comemnt">Коментар</label>
+                    <textarea name="comemnt" id="comemnt" rows="10" placeholder="Ведіть текст"></textarea>
+                </p>
+
+                <p >
+                    <input type="checkbox" name="policy" id="policy">
+                    <label for="policy">Погоджуюся з розсилкою та приймаю Умови договору</label>
+                </p>
+
+
+
+                <button type="submit">Відправити</button>
+            </form>
         </div>
     </div>
 

@@ -789,8 +789,8 @@ align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    width: 536px;
+    height: 589px;
     padding: 8px;
     border-radius: 4px;
     background: #FFF;
@@ -798,6 +798,25 @@ align-items: center;
 
 
 }
+
+
+.form__field{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 4px;
+background: #FFF;
+box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);    
+}
+.form__field label{
+    margin: 4px;
+}
+.form__field input{
+
+    padding: 11px;
+}
+
+
 
 .close__black {
     border-radius: 50%;
