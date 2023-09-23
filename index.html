@@ -380,17 +380,32 @@
             <form class="form">
                 <p class="form__field">
                     <label for="name">І'мя</label>
-                    <input type="text" name="name" id="name">
+                <div class="form__input-wrap">
+                    <input type="text" name="name" id="name" class="form__field-input ">
+                    <svg class="modal__icon" width="18px" height="18px">
+                        <use href="./img/icons/symbol-defs-modal.svg#icon-person-black"></use>
+                    </svg>
+                </div>
                 </p>
 
                 <p class="form__field">
-                    <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel">
+                    <label for="name">Телефон</label>
+                <div class="form__input-wrap">
+                    <input type="text" name="name" id="name" class="form__field-input ">
+                    <svg class="modal__icon" width="18px" height="18px">
+                        <use href="./img/icons/symbol-defs-modal.svg#icon-phone-black"></use>
+                    </svg>
+                </div>
                 </p>
 
                 <p class="form__field">
-                    <label for="mail">Пошта</label>
-                    <input type="email" name="mail" id="mail">
+                    <label for="name">Пошта</label>
+                <div class="form__input-wrap">
+                    <input type="text" name="name" id="name" class="form__field-input ">
+                    <svg class="modal__icon" width="18px" height="18px">
+                        <use href="./img/icons/symbol-defs-modal.svg#icon-email-black"></use>
+                    </svg>
+                </div>
                 </p>
 
                 <p class="form__field">
@@ -398,14 +413,16 @@
                     <textarea name="comemnt" id="comemnt" rows="10" placeholder="Введіть текст"></textarea>
                 </p>
 
-                <p class="checkbox" >
+                <p class="checkbox">
                     <input type="checkbox" name="policy" id="policy">
-                    <label for="policy">Погоджуюся з розсилкою та приймаю <a href="#" class="policy">Умови договору</a></label>
+                    <label for="policy">Погоджуюся з розсилкою та приймаю <a href="#" class="policy">Умови
+                            договору</a></label>
                 </p>
 
+                <div class="form__button"> 
+                    <button class="modal__button" type="submit">Відправити</button>
+                </div>
 
-
-                <button class="modal__button" type="submit">Відправити</button>
             </form>
         </div>
     </div>
