@@ -844,10 +844,12 @@ a {
     cursor: pointer;
 }
 
-.form__field-input:hover{
+.form__field-input:hover 
+ {
     border-radius: 4px;
     border: 1px solid #2196F3;}
 
+   
 .modal__icon {
     position: absolute;
     align-items: center;
@@ -856,7 +858,8 @@ a {
 
 
 }
-.form__input-wrap:hover{
+.form__input-wrap:hover,
+.form__input-wrap:focus{
     fill: #2196F3;
 }
 
@@ -869,15 +872,8 @@ a {
 
 }
 
-.form__field label:hover {
-    cursor: pointer;
-}
-
-
-
 
 .form__field--textarea {
-    color: rgba(117, 117, 117, 0.50);
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
@@ -889,9 +885,17 @@ a {
     border: 1px solid rgba(33, 33, 33, 0.20);
     resize: none;
     margin-top: 4px;
+    cursor: pointer;
+}
+
+.form__field--textarea:hover{
+    border-radius: 4px;
+    border: 1px solid #2196F3;
+
 }
 
 
+    
 
 .form__field textarea::placeholder {
     color: rgba(117, 117, 117, 0.50);
