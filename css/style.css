@@ -819,6 +819,7 @@ a {
 }
 
 
+
 .form__field {
     display: block;
     margin-top: 10px;
@@ -840,8 +841,12 @@ a {
     outline: none;
     margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
-
+    cursor: pointer;
 }
+
+.form__field-input:hover{
+    border-radius: 4px;
+    border: 1px solid #2196F3;}
 
 .modal__icon {
     position: absolute;
@@ -850,6 +855,9 @@ a {
     top: 16px;
 
 
+}
+.form__input-wrap:hover{
+    fill: #2196F3;
 }
 
 .form__field label {
@@ -861,10 +869,14 @@ a {
 
 }
 
+.form__field label:hover {
+    cursor: pointer;
+}
 
 
 
-.form__field textarea {
+
+.form__field--textarea {
     color: rgba(117, 117, 117, 0.50);
     font-size: 12px;
     font-weight: 400;
@@ -878,6 +890,8 @@ a {
     resize: none;
     margin-top: 4px;
 }
+
+
 
 .form__field textarea::placeholder {
     color: rgba(117, 117, 117, 0.50);
@@ -899,10 +913,30 @@ a {
 
 }
 
-.checkbox input {
+.check__input {
+    appearance: none;
+
+}
+
+.check__box {
     width: 16px;
     height: 15px;
+    background-image: url(/img/icons/off.svg.svg);
 }
+
+.check__input:checked+.check__box {
+    background-image: url(../img/icons/off.svg.svg);
+
+}
+
+.check__input:focus:checked+.check__box {
+    background-image: url(../img/icons/on.svg.svg);
+
+}
+
+
+
+
 
 .policy {
     color: #2196F3;
@@ -928,9 +962,14 @@ a {
     margin-left: auto;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
-.form__button{
+.close__black:hover{
+    fill: #2196F3;
+}
+
+.form__button {
     display: flex;
     justify-content: center;
 }
