@@ -378,50 +378,54 @@
             </button>
             <p class="form__name">Залиште свої дані, ми вам передзвонимо</p>
             <form class="form">
-                <p class="form__field">
-                    <label  for="name">І'мя</label>
-                <div class="form__input-wrap">
-                    <input type="text" name="name" id="name" class="form__field-input ">
-                    <svg class="modal__icon" width="18px" height="18px">
-                        <use href="./img/icons/symbol-defs-modal.svg#icon-person-black"></use>
-                    </svg>
+                <div class="form__field">
+                    <label for="name">І'мя</label>
+                    <div class="form__input-wrap">
+                        <input type="text" name="name" id="name" class="form__field-input ">
+                        <svg class="modal__icon" width="18px" height="18px">
+                            <use href="./img/icons/symbol-defs-modal.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
                 </div>
-                </p>
 
-                <p class="form__field">
+                <div class="form__field">
                     <label for="name">Телефон</label>
-                <div class="form__input-wrap">
-                    <input type="text" name="name" id="name" class="form__field-input ">
-                    <svg class="modal__icon" width="18px" height="18px">
-                        <use href="./img/icons/symbol-defs-modal.svg#icon-phone-black"></use>
-                    </svg>
+                    <div class="form__input-wrap">
+                        <input type="text" name="name" id="name" class="form__field-input ">
+                        <svg class="modal__icon" width="18px" height="18px">
+                            <use href="./img/icons/symbol-defs-modal.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
                 </div>
-                </p>
 
-                <p class="form__field">
+                <div class="form__field">
                     <label for="name">Пошта</label>
-                <div class="form__input-wrap">
-                    <input type="text" name="name" id="name" class="form__field-input ">
-                    <svg class="modal__icon" width="18px" height="18px">
-                        <use href="./img/icons/symbol-defs-modal.svg#icon-email-black"></use>
-                    </svg>
+                    <div class="form__input-wrap">
+                        <input type="text" name="name" id="name" class="form__field-input ">
+                        <svg class="modal__icon" width="18px" height="18px">
+                            <use href="./img/icons/symbol-defs-modal.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
                 </div>
-                </p>
 
-                <p class="form__field">
+                <div class="form__field">
                     <label for="comemnt">Коментар</label>
-                    <textarea class="form__field--textarea" name="comemnt" id="comemnt" rows="10" placeholder="Введіть текст"></textarea>
-                </p>
+                    <textarea class="form__field--textarea" name="comemnt" id="comemnt" rows="10"
+                        placeholder="Введіть текст"></textarea>
+                </div>
 
-                <p class="checkbox">
-                    <input class="check__input" type="checkbox" name="policy" id="policy" >
-                    <span class="check__box"></span>
-                    <label for="policy">Погоджуюся з розсилкою та приймаю <a href="#" class="policy">Умови
+                <div class="checkbox">
+                   
+                    <label class="checkhbox__label" for="policy">
+                        <input class="check__input" type="checkbox" name="policy" id="policy">
+                        <span class="check__box"></span>Погоджуюся з розсилкою та приймаю <a href="#"
+                            class="policy">Умови
                             договору</a></label>
 
-                </p>
 
-                <div class="form__button"> 
+                </div>
+
+                <div class="form__button">
                     <button class="modal__button" type="submit">Відправити</button>
                 </div>
 
