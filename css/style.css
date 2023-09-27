@@ -240,7 +240,7 @@ a {
 
 .herow__button:hover,
 .herow__button:focus {
-    background-color: var(--action-hover-color);
+    background-color: #4c52ff;
     /* transition: 0.7s */
 }
 
@@ -751,7 +751,16 @@ a {
     display: flex;
     align-items: center;
     padding: 16px 10px;
+    transition-property: var(--action-hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+
+}
+
+.mail:hover,
+.vail:focus {
+    border: 1px solid rgb(255, 255, 255);
 
 }
 
@@ -776,6 +785,15 @@ a {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     gap: 10px
 }
+
+.footer__button:hover,
+.footer__button:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    /* transition: 0.7s */
+}
+
+
 
 .footer__email {
     display: flex;
@@ -838,11 +856,13 @@ a {
     margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     cursor: pointer;
+    transition-property: var(--action-hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__field-input:hover {
     fill: #2196F3;
-
     border-radius: 4px;
     border: 1px solid #2196F3;
 }
@@ -874,6 +894,10 @@ a {
     align-items: center;
     left: 12px;
     top: 16px;
+    pointer-events: none;
+    transition-property: var(--action-hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -902,6 +926,9 @@ a {
     resize: none;
     margin-top: 4px;
     cursor: pointer;
+    transition-property: var(--action-hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__field--textarea:hover {
@@ -914,6 +941,7 @@ a {
     outline: none;
     border-radius: 4px;
     border: 1px solid #2196F3;
+
 }
 
 
@@ -953,12 +981,14 @@ a {
     border-radius: 2px;
     align-items: center;
     cursor: pointer;
+    
 
 }
 
 .check__input:checked+.check__box {
     border: none;
     background-image: url(../img/icons/on.svg.svg);
+    
 }
 
 
@@ -994,6 +1024,10 @@ a {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    transition-property: var(--action-hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .close__black:hover {
@@ -1019,7 +1053,17 @@ a {
     padding: 10px 28px;
     border: none;
     border-radius: 4px;
+    transition-property: var(--action-hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+.modal__button:hover,
+.modal__button:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    /* transition: 0.7s */
 }
 
 
