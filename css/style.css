@@ -154,6 +154,7 @@ a {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--item-text-color);
+        
 
 }
 
@@ -945,10 +946,6 @@ a {
 }
 
 
-
-
-
-
 .form__field textarea::placeholder {
     color: rgba(117, 117, 117, 0.50);
 
@@ -973,6 +970,8 @@ a {
     appearance: none;
 
 }
+
+
 
 .check__box {
     width: 16px;
@@ -1006,6 +1005,8 @@ a {
     display: inline-block;
     line-height: 0.85;
 }
+
+
 
 
 
