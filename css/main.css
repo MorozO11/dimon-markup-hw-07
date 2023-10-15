@@ -49,7 +49,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--backdrop-fons-color);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,15 +64,47 @@ a {
 .modal__button {
   margin-top: 30px;
   min-width: 200px;
-  color: #FFF;
+  color: var(--button-text-color);
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
   /* 187.5% */
   letter-spacing: 0.96px;
-  background-color: var(--link-text-color);
+  background-color: var(--button-fons-color);
   cursor: pointer;
   padding: 10px 28px;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition-property: var(--button-hover-color);
+  transition-property: var(--button-hover-color);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__button:hover {
+  background: var(--button-hover-color);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.modal__button:focus {
+  background: var(--button-hover-color);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.herow__button {
+  color: var(--button-text-color);
+  font-family: Roboto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 187.5%;
+  /* 30px */
+  letter-spacing: 0.96px;
+  background-color: var(--link-text-color);
+  cursor: pointer;
+  padding: 10px 32px;
   border: none;
   border-radius: 4px;
   -webkit-transition-property: var(--action-hover-color);
@@ -82,13 +114,51 @@ a {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__button:hover {
-  background: #188CE8;
+.herow__button:hover {
+  background: var(--button-hover-color);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.modal__button:focus {
-  background: #188CE8;
+.herow__button:focus {
+  background: var(--button-hover-color);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--button-text-color);
+  font-family: Roboto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 187.5%;
+  /* 30px */
+  letter-spacing: 0.96px;
+  background-color: var(--link-text-color);
+  cursor: pointer;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition-property: var(--action-hover-color);
+  transition-property: var(--action-hover-color);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 10px;
+}
+.footer__button:hover {
+  background: var(--button-hover-color);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.footer__button:focus {
+  background: var(--button-hover-color);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
@@ -112,7 +182,6 @@ a {
 .form__name {
   padding-bottom: 10px;
   text-align: center;
-  color: #212121;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.6px;
@@ -147,25 +216,25 @@ a {
 .form__field-input:hover {
   fill: #2196F3;
   border-radius: 4px;
-  border: 1px solid #2196F3;
+  border: 1px solid var(--action-hover-color);
 }
 
 .form__field-input:focus {
-  fill: #2196F3;
+  fill: var(--action-hover-color);
   border-radius: 4px;
-  border: 1px solid #2196F3;
+  border: 1px solid var(--action-hover-color);
 }
 
 .modal__icon:hover {
-  fill: #2196F3;
+  fill: var(--action-hover-color);
 }
 
 .form__field-input:hover + .modal__icon {
-  fill: #2196F3;
+  fill: var(--action-hover-color);
 }
 
 .form__field-input:focus + .modal__icon {
-  fill: #2196F3;
+  fill: var(--action-hover-color);
 }
 
 .modal__icon {
@@ -185,7 +254,7 @@ a {
 }
 
 .form__field label {
-  color: #757575;
+  color: var(--label--text-color);
   font-size: 12px;
   line-height: normal;
   letter-spacing: 0.12px;
@@ -215,13 +284,13 @@ a {
 
 .form__field--textarea:hover {
   border-radius: 4px;
-  border: 1px solid #2196F3;
+  border: 1px solid var(--action-hover-color);
 }
 
 .form__field--textarea:focus {
   outline: none;
   border-radius: 4px;
-  border: 1px solid #2196F3;
+  border: 1px solid var(--action-hover-color);
 }
 
 .form__field textarea::-webkit-input-placeholder {
@@ -332,7 +401,7 @@ a {
 }
 
 .modal__close--black:hover {
-  fill: #2196F3;
+  fill: var(--action-hover-color);
 }
 
 .form__button {
@@ -377,7 +446,7 @@ a {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  color: #AFB1B8;
+  color: var(--team-social-color);
   -webkit-transition-property: color, var(--link-text-color);
   transition-property: color, var(--link-text-color);
   -webkit-transition-duration: 250ms;
@@ -387,11 +456,11 @@ a {
 }
 .team__social--link:hover {
   background-color: var(--link-text-color);
-  color: #FFF;
+  color: var(--social-hover-color);
 }
 .team__social--link:focus {
   background-color: var(--link-text-color);
-  color: #FFF;
+  color: var(--social-hover-color);
 }
 
 .team__social--icon {
@@ -412,6 +481,42 @@ a {
 
 .team__section {
   background: var(--team-background-color);
+}
+
+.footer__social--item {
+  border-radius: 50%;
+  background-color: #3a3b47;
+}
+
+.footer__social--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: var(--footer-social-color);
+  -webkit-transition-property: var(--link-text-color);
+  transition-property: var(--link-text-color);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__social--icon {
+  fill: currentColor;
+}
+
+.footer__social--link:hover,
+.footer__social--link:focus {
+  background-color: var(--link-text-color);
 }
 
 .client__title {
@@ -595,42 +700,6 @@ a {
   font-weight: 700;
 }
 
-.footer__social--item {
-  border-radius: 50%;
-  background-color: #3a3b47;
-}
-
-.footer__social--link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  color: #FFF;
-  -webkit-transition-property: var(--link-text-color);
-  transition-property: var(--link-text-color);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__social--icon {
-  fill: currentColor;
-}
-
-.footer__social--link:hover,
-.footer__social--link:focus {
-  background-color: var(--link-text-color);
-}
-
 .footer__newsletter {
   gap: 12px;
   margin-left: 93px;
@@ -674,42 +743,6 @@ a {
 .footer__mail:hover,
 .footer__mail:focus {
   border: 1px solid rgb(255, 255, 255);
-}
-
-.footer__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #FFF;
-  font-family: Roboto;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 187.5%;
-  /* 30px */
-  letter-spacing: 0.96px;
-  background-color: var(--link-text-color);
-  cursor: pointer;
-  padding: 10px 28px;
-  border: none;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  -webkit-transition-property: var(--action-hover-color);
-  transition-property: var(--action-hover-color);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  gap: 10px;
-}
-
-.footer__button:hover,
-.footer__button:focus {
-  background: #188CE8;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  /* transition: 0.7s */
 }
 
 .footer__email {
@@ -881,34 +914,6 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   max-width: 700px;
-}
-
-.herow__button {
-  color: #FFF;
-  font-family: Roboto;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 187.5%;
-  /* 30px */
-  letter-spacing: 0.96px;
-  background-color: var(--link-text-color);
-  cursor: pointer;
-  padding: 10px 32px;
-  border: none;
-  border-radius: 4px;
-  -webkit-transition-property: var(--action-hover-color);
-  transition-property: var(--action-hover-color);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.herow__button:hover,
-.herow__button:focus {
-  background-color: #4c52ff;
-  /* transition: 0.7s */
 }
 
 .team__card {
@@ -1120,8 +1125,16 @@ a {
   --item-text-color: #757575;
   --fons-background-color: #2F303A;
   --adres-text-color: #FFF;
-  --hero-text-color: #FFF;
+  --hero-text-color:#FFF;
   --team-background-color: #F5F4FA;
   --border-backgraund-color: #EEE;
   --border-client-color: #AFB1B8;
+  --backdrop-fons-color:rgba(0, 0, 0, 0.2);
+  --button-text-color: #FFF;
+  --button-fons-color: #2196F3;
+  --button-hover-color: #188CE8;
+  --label--text-color: #757575;
+  --team-social-color: #AFB1B8;
+  --social-hover-color:#FFF;
+  --footer-social-color:#FFF;
 }/*# sourceMappingURL=main.css.map */
