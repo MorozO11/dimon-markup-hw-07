@@ -1,6 +1,6 @@
 :root {
     --primary-text-color: #212121;
-    --link-text-color: #2196F3;
+   
     --action-hover-color: #2195f3ab;
     --item-text-color: #757575;
     --fons-background-color: #2F303A;
@@ -10,11 +10,19 @@
     --border-backgraund-color: #EEE;
     --border-client-color: #AFB1B8;
     --backdrop-fons-color:rgba(0, 0, 0, 0.2);
+  
+    
+    --label--text-color: #757575;
+ 
+// ---Іконки соц мереж-----
+
+--link-text-color: #2196F3;
+--team-social-color: #AFB1B8;
+--social-hover-color:#FFF;
+--footer-social-color:#FFF;
+
+    // ---Кнопки---
     --button-text-color: #FFF;
     --button-fons-color: #2196F3;
     --button-hover-color: #188CE8;
-    --label--text-color: #757575;
-    --team-social-color: #AFB1B8;
-    --social-hover-color:#FFF;
-    --footer-social-color:#FFF;
 }
