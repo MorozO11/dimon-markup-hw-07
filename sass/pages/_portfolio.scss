@@ -27,14 +27,16 @@
     transition-property: var(--adres-text-color), var(--link-text-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--adres-text-color);
+        background-color: var(--link-text-color);
+        /* transition: all .2s linear; */
+    }
 }
 
-.filter__button:hover,
-.filter__button:focus {
-    color: var(--adres-text-color);
-    background-color: var(--link-text-color);
-    /* transition: all .2s linear; */
-}
+
 
 /* ----------------------ПРОЕКТИ------------------- */
 
@@ -76,14 +78,16 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover,
+    &:active {
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+
 }
 
 
 
-.projekt:hover,
-.projekt:active {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
+
 
 
 .projekt__img {

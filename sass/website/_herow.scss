@@ -3,36 +3,40 @@
         url(../img/hero-img.jpg) no-repeat;
     background-size: cover;
 
+    &__container {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        
+    
+    }
 
 
+    &__title {
+        color: var(--hero-text-color);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 136.364%;
+        /* 60px*/
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 700px;
+    
+    }
 
 }
 
-.herow__container {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-
-}
 
 
-.herow__title {
-    color: var(--hero-text-color);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 136.364%;
-    /* 60px*/
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: 700px;
 
-}
+
 

@@ -3,53 +3,51 @@
     padding-bottom: 60px;
     padding-top: 60px;
 
+    &__address {
+        color: var(--adres-text-color);
+        line-height: 171.429%;
+        /*24px */
+        letter-spacing: 0.42px;
+        font-style: normal;
+        padding-top: 20px;
+        padding-bottom: 9px;
+
+
+    }
+
+    &__logo {
+        color: var(--link-text-color);
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px;
+        text-decoration: none;
+        padding-bottom: 20px;
+
+    }
+
+    &__logo span {
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px
+    }
 }
 
 
-.footer__address--box {
+.footer-address__box {
     margin-right: 70px;
 }
 
-.footer__address {
-    color: var(--adres-text-color);
-    line-height: 171.429%;
-    /*24px */
-    letter-spacing: 0.42px;
-    font-style: normal;
-    padding-top: 20px;
-    padding-bottom: 9px;
 
-
-}
-
-.footer__logo {
-    color: var(--link-text-color);
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-    text-decoration: none;
-    padding-bottom: 20px;
-
-}
-
-.footer__logo span {
-    color: #FFF;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px
-}
-
-
-
-.footer__contact--iteam {
+.footer-contact__iteam {
     padding-bottom: 9px;
 }
 
-.footer__nav--link {
+.footer-nav__link {
     color: rgba(255, 255, 255, 0.60);
     line-height: 171.429%;
     /* 24px */
@@ -58,13 +56,15 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--link-text-color);
+
+    }
 }
 
-.footer__nav--link:hover,
-.footer__nav--link:focus {
-    color: var(--link-text-color);
 
-}
 
 .footer__container {
     display: flex;
@@ -72,7 +72,7 @@
 
 
 
-.footer__social--list {
+.footer-social__list {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -97,7 +97,7 @@
     margin-left: 93px;
 }
 
-.footer__newsletter--title{
+.footer-newsletter__title {
     color: #FFF;
     font-size: 14px;
     letter-spacing: 0.42px;
@@ -124,13 +124,15 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
+    &:hover,
+    &:focus {
+        border: 1px solid rgb(255, 255, 255);
+
+    }
+
+
 }
 
-.footer__mail:hover,
-.footer__mail:focus {
-    border: 1px solid rgb(255, 255, 255);
-
-}
 
 
 

@@ -16,7 +16,7 @@
 
 
 
-.form__name {
+.form__title {
     padding-bottom: 10px;
     text-align: center;
     font-size: 20px;
@@ -34,14 +34,14 @@
 }
 
 
-.form__input-wrap {
+.form-input__wrap {
     position: relative;
     margin-bottom: 10px;
 
 }
 
 
-.form__field-input {
+.form-field__input {
     width: 100%;
     height: 40px;
     border-radius: 4px;
@@ -50,36 +50,33 @@
     margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     cursor: pointer;
-    transition-property: var(--action-hover-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form__field-input:hover {
-    fill: #2196F3;
-    border-radius: 4px;
-    border: 1px solid var(--action-hover-color);
-}
+    &:hover {
+        fill: #2196F3;
+        border-radius: 4px;
+        border: 1px solid var(--action-hover-color);
+    }
 
-.form__field-input:focus {
-    fill:var(--action-hover-color);
-    border-radius: 4px;
-    border: 1px solid var(--action-hover-color);
-}
-
-.modal__icon:hover {
-    fill: var(--action-hover-color);
-}
-
-.form__field-input:hover+.modal__icon {
-    fill: var(--action-hover-color);
-
-}
+    &:focus {
+        fill:var(--action-hover-color);
+        border-radius: 4px;
+        border: 1px solid var(--action-hover-color);
+    }
 
 
-.form__field-input:focus+.modal__icon {
-    fill:var(--action-hover-color);
-
+    &:hover+.modal__icon {
+        fill: var(--action-hover-color);
+        
+    
+    }
+    
+    
+    &:focus+.modal__icon {
+        fill:var(--action-hover-color);
+    
+    }
 }
 
 
@@ -107,7 +104,7 @@
 }
 
 
-.form__field--textarea {
+.form-field__textarea {
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
@@ -123,20 +120,23 @@
     transition-property: var(--action-hover-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover {
+        border-radius: 4px;
+        border: 1px solid var( --action-hover-color);
+    
+    }
+    
+    &:focus {
+        outline: none;
+        border-radius: 4px;
+        border: 1px solid var(--action-hover-color);
+    
+    }
+    
 }
 
-.form__field--textarea:hover {
-    border-radius: 4px;
-    border: 1px solid var( --action-hover-color);
-
-}
-
-.form__field--textarea:focus {
-    outline: none;
-    border-radius: 4px;
-    border: 1px solid var(--action-hover-color);
-
-}
 
 
 .form__field textarea::placeholder {
@@ -162,6 +162,12 @@
 .check__input {
     appearance: none;
 
+    &:checked+.check__box {
+        border: none;
+        background-image: url(../img/icons/on.svg.svg);
+        
+    }
+
 }
 
 
@@ -177,11 +183,7 @@
 
 }
 
-.check__input:checked+.check__box {
-    border: none;
-    background-image: url(../img/icons/on.svg.svg);
-    
-}
+
 
 
 .checkhbox__label {
@@ -200,7 +202,7 @@
 }
 
 
-.modal__close--black {
+.modal-close__black {
     position: absolute;
     display: flex;
     align-items: center;
@@ -217,11 +219,14 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+
+
+    &:hover {
+        fill: var(--action-hover-color);
+    }
 }
 
-.modal__close--black:hover {
-    fill: var(--action-hover-color);
-}
+
 
 .form__button {
     display: flex;
