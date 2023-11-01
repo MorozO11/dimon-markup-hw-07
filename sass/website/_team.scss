@@ -1,4 +1,19 @@
-.team {
+
+.team{
+    &__title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.08px;
+    
+    }
+}
+
+
+
+
+.list-team {
     display: flex;
     gap: 30px;
     justify-content: space-between;
