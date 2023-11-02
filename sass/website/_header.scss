@@ -56,16 +56,10 @@
         &:focus {
             color: var(--link-text-color);
         }
-    }
 
-    &__iteam {
-        padding-top: 32px;
-        padding-bottom: 32px;
+        
 
-    }
-
-
-    &__active {
+    &-active {
         color: var(--link-text-color);
         position: relative;
 
@@ -80,6 +74,14 @@
             border-radius: 2px;
 
         }
+    }
+
+    }
+
+    &__iteam {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
     }
 
 

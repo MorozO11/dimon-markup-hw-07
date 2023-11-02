@@ -93,7 +93,7 @@ a {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.modal-close__black {
+.modal-close__btn {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,8 +117,36 @@ a {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close__black:hover {
+.modal-close__btn:hover {
   fill: var(--action-hover-color);
+}
+
+.filter-portfolio__button {
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  /* 162.5% */
+  letter-spacing: 0.48px;
+  padding: 6px 22px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: var(--team-background-color);
+  -webkit-transition-property: var(--adres-text-color), var(--link-text-color);
+  transition-property: var(--adres-text-color), var(--link-text-color);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter-portfolio__button:hover, .filter-portfolio__button:focus {
+  color: var(--adres-text-color);
+  background-color: var(--link-text-color);
+  /* transition: all .2s linear; */
 }
 
 .modal {
@@ -642,15 +670,11 @@ a {
 .header-nav__link:hover, .header-nav__link:focus {
   color: var(--link-text-color);
 }
-.header-nav__iteam {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.header-nav__active {
+.header-nav__link-active {
   color: var(--link-text-color);
   position: relative;
 }
-.header-nav__active::after {
+.header-nav__link-active::after {
   content: "";
   display: block;
   width: 100%;
@@ -659,6 +683,10 @@ a {
   position: absolute;
   bottom: -1px;
   border-radius: 2px;
+}
+.header-nav__iteam {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .herow {
@@ -789,10 +817,6 @@ a {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.filter__container {
-  padding-bottom: 50px;
-}
-
 .filter__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,38 +825,11 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 8px;
-}
-
-.filter__button {
-  color: #212121;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  /* 162.5% */
-  letter-spacing: 0.48px;
-  padding: 6px 22px;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  background: var(--team-background-color);
-  -webkit-transition-property: var(--adres-text-color), var(--link-text-color);
-  transition-property: var(--adres-text-color), var(--link-text-color);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.filter__button:hover, .filter__button:focus {
-  color: var(--adres-text-color);
-  background-color: var(--link-text-color);
-  /* transition: all .2s linear; */
+  padding-bottom: 50px;
 }
 
 /* ----------------------ПРОЕКТИ------------------- */
-.examples__list {
+.projekt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -844,26 +841,7 @@ a {
           justify-content: space-between;
   gap: 30px;
 }
-
-.projekt__name {
-  font-size: 18px;
-  line-height: 36px;
-  /* 200% */
-  letter-spacing: 1.08px;
-  padding-top: 20px;
-  padding-left: 24px;
-}
-
-.projekt__direction {
-  color: var(--item-text-color);
-  line-height: 30px;
-  /* 187.5% */
-  letter-spacing: 0.48px;
-  padding-left: 24px;
-  padding-bottom: 20px;
-}
-
-.projekt {
+.projekt__list {
   border: 1px solid var(--border-backgraund-color);
   -webkit-box-flex: 0;
       -ms-flex: 0 1 370px;
@@ -876,16 +854,18 @@ a {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projekt:hover, .projekt:active {
+.projekt__list:hover, .projekt__list:active {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-
+.projekt__list:hover .projekt__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 .projekt__img {
   position: relative;
   overflow: hidden;
 }
-
 .projekt__overlay {
   position: absolute;
   padding-top: 63px;
@@ -908,10 +888,21 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projekt:hover .projekt__overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+.projekt__name {
+  font-size: 18px;
+  line-height: 36px;
+  /* 200% */
+  letter-spacing: 1.08px;
+  padding-top: 20px;
+  padding-left: 24px;
+}
+.projekt__direction {
+  color: var(--item-text-color);
+  line-height: 30px;
+  /* 187.5% */
+  letter-spacing: 0.48px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 :root {
