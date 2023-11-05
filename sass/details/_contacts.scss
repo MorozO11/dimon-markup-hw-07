@@ -1,31 +1,3 @@
-.header-contact {
-    display: flex;
-    margin-left: auto;
-    column-gap: 50px;
-
-    &__link {
-        color: var(--item-text-color);
-        font-weight: 500;
-        letter-spacing: 0.28px;
-        text-decoration: none;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        display: flex;
-        align-items: center;
-        transition-property: color, fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        fill: var(--item-text-color);
-
-        &:hover,
-        &:focus {
-            color: var(--link-text-color);
-            fill: var(--link-text-color);
-        }
-
-    }
-}
-
 
 .footer-contact{
     &__iteam{
