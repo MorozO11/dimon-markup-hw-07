@@ -62,6 +62,12 @@ a {
 }
 
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-width: 200px;
   height: 50px;
   color: var(--button-text-color);
@@ -574,6 +580,27 @@ a {
           flex-direction: row;
 }
 
+.contact-footer__iteam {
+  padding-bottom: 9px;
+}
+.contact-footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 171.429%;
+  /* 24px */
+  letter-spacing: 0.42px;
+  text-decoration: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-bottom: 9px;
+}
+.contact-footer__link:hover, .contact-footer__link:focus {
+  color: var(--link-text-color);
+}
+
 .header {
   width: 100%;
   border: 1px solid var(--border-backgraund-color);
@@ -805,7 +832,7 @@ a {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.filter__list {
+.filter-portfolio__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -816,8 +843,8 @@ a {
   padding-bottom: 50px;
 }
 
-/* ----------------------ПРОЕКТИ------------------- */
-.projekt {
+/* ----------------------БЛОК ПРОЕКТИ------------------- */
+.list-projekt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,7 +856,7 @@ a {
           justify-content: space-between;
   gap: 30px;
 }
-.projekt__list {
+.list-projekt__iteam {
   border: 1px solid var(--border-backgraund-color);
   -webkit-box-flex: 0;
       -ms-flex: 0 1 370px;
@@ -842,19 +869,19 @@ a {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projekt__list:hover, .projekt__list:active {
+.list-projekt__iteam:hover, .list-projekt__iteam:active {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-.projekt__list:hover .projekt__overlay {
+.list-projekt__iteam:hover .list-projekt__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.projekt__img {
+.list-projekt__img {
   position: relative;
   overflow: hidden;
 }
-.projekt__overlay {
+.list-projekt__overlay {
   position: absolute;
   padding-top: 63px;
   padding-bottom: 63px;
@@ -876,7 +903,7 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projekt__name {
+.list-projekt__name {
   font-size: 18px;
   line-height: 36px;
   /* 200% */
@@ -884,7 +911,7 @@ a {
   padding-top: 20px;
   padding-left: 24px;
 }
-.projekt__direction {
+.list-projekt__direction {
   color: var(--item-text-color);
   line-height: 30px;
   /* 187.5% */
@@ -912,25 +939,4 @@ a {
   --button-text-color: #FFF;
   --button-fons-color: #2196F3;
   --button-hover-color: #188CE8;
-}
-
-.footer-contact__iteam {
-  padding-bottom: 9px;
-}
-.footer-contact__link {
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 171.429%;
-  /* 24px */
-  letter-spacing: 0.42px;
-  text-decoration: none;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding-bottom: 9px;
-}
-.footer-contact__link:hover, .footer-contact__link:focus {
-  color: var(--link-text-color);
 }/*# sourceMappingURL=main.css.map */

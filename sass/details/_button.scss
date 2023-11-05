@@ -1,5 +1,7 @@
-
+// -----------ОСНОВНІ КНОПКИ--------
 .button{
+   display: flex;
+   justify-content: center;
    min-width: 200px;
    height: 50px;
    color:var(--button-text-color);
@@ -26,7 +28,7 @@
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 }
-
+// ------------КНОПКА ЗАКРИТТЯ МОДАЛКИ------
 .modal-close__btn {
    position: absolute;
    display: flex;
@@ -50,8 +52,7 @@
        fill: var(--action-hover-color);
    }
 }
-
-
+// ----------КНОПКИ ФІЛЬТРА------------
 .filter-portfolio__button {
    color: #212121;
    text-align: center;

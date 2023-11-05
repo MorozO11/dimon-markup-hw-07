@@ -1,3 +1,4 @@
+// ----------БЛОК КОМАНДИ-----------
 .team {
     background-color: var(--team-background-color);
     &__container {
@@ -15,7 +16,7 @@
       margin-bottom: 30px;
     }
   }
-  
+  // ---------КАРТКИ СПІВРОБІТНИКІВ-------
   .list-team {
     display: flex;
     gap: 30px;

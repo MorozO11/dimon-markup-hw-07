@@ -1,3 +1,4 @@
+// -------------- БЛОК ФУТЕРА-------
 .footer {
     background: var(--fons-background-color);
     padding-bottom: 60px;
@@ -92,3 +93,27 @@
       flex-direction: row;
     }
   }
+
+ //   -----------блок контакти-----------------------------
+  .contact-footer{
+    &__iteam{
+        padding-bottom: 9px;
+    }    
+    &__link {
+        color: rgba(255, 255, 255, 0.60);
+        line-height: 171.429%;
+        /* 24px */
+        letter-spacing: 0.42px;
+        text-decoration: none;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        padding-bottom: 9px;
+    
+        &:hover,
+        &:focus {
+            color: var(--link-text-color);
+    
+        }
+    }
+}
