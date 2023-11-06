@@ -1,3 +1,5 @@
+@import './utils/_mixin.scss';
+@import './utils/_variables.scss';
 @import './reset/_reset.scss';
 @import './details/_backdrop.scss';
 @import './details/_button.scss';
@@ -11,4 +13,4 @@
 @import './website/_team.scss';
 @import './website/_work.scss';
 @import './pages/_portfolio.scss';
-@import './utils/_variables.scss';
+

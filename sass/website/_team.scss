@@ -5,10 +5,8 @@
     }
     &__title {
       text-align: center;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 1.08px;
+      text-align: center;
+      @include font(700,36px,normal,1.08px);
     }
     &__list {
     }
@@ -41,9 +39,7 @@
       color: var(--item-text-color);
       text-align: center;
       font-family: Roboto;
-      font-size: 16px;
-      font-weight: 400;
-      letter-spacing: 0.48px;
+      @include font(400,16px,normal,0.48px);
       margin-bottom: 16px;
     }
   }

@@ -4,10 +4,7 @@
     }
     &__title {
       text-align: center;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 1.08px;
+      @include font(700,36px,normal,1.08px);
       margin-bottom: 50px;
     }
     &__list {
