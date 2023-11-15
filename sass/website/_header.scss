@@ -1,7 +1,7 @@
 // -------Головний блок хедера------------------------------------------------------
 .header {
     width: 100%;
-    border: 1px solid var(--border-backgraund-color);
+    border-bottom: 1px solid var(--border-backgraund-color);
     background: #fff;
     &__container {
       display: flex;
@@ -9,7 +9,7 @@
       min-width: 80px;
     }
     &__logo {
-      @include font(700,26px,normal,0.78px);
+      @include font(700,24px,normal,0.78px);
       font-family: Raleway;
       color: var(--primary-text-color);
       margin-right: 93px;
